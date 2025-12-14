@@ -46,7 +46,7 @@ app.get("/health", async (req, reply) => {
 // GitHub OAuth Flow
 const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
-const FRONTEND_URL = process.env.FRONTEND_URL || "https://linera-host-gateway.vercel.app/auth/callback";
+const FRONTEND_URL = process.env.FRONTEND_URL || "https://linera-hostv2.vercel.app/auth/callback";
 
 app.get('/auth/github/login', async (req, reply) => {
   if (!GITHUB_CLIENT_ID) {
