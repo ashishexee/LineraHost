@@ -81,7 +81,7 @@ export default function DashboardHome() {
             toast.error('Chain ID not available. Please connect Linera.');
             return;
         }
-        const url = `https://peerhost-jl8u.vercel.app/run/${chainId}/${project}/${functionName}`;
+        const url = `https://linera-host-gateway.vercel.app/run/${chainId}/${project}/${functionName}`;
         navigator.clipboard.writeText(url);
         toast.success('Project URL copied to clipboard');
     };
@@ -108,7 +108,7 @@ export default function DashboardHome() {
                         <div className="w-2 h-2 rounded-full bg-green-500"></div>
                         <span className="text-white font-medium">All systems operational</span>
                     </div>
-                    <div className="text-xs text-gray-500">PeerHost Network v1.0</div>
+                    <div className="text-xs text-gray-500">LineraHost Network v1.0</div>
                 </div>
             </div>
 

@@ -60,7 +60,7 @@ export default function Projects() {
     };
 
     const copyProjectUrl = (subdomain: string, project: string) => {
-        const url = `https://peerhost-jl8u.vercel.app/run/${subdomain}/${project}`;
+        const url = `https://linera-host-gateway.vercel.app/run/${subdomain}/${project}`;
         navigator.clipboard.writeText(url);
         toast.success('Project URL copied to clipboard');
     };

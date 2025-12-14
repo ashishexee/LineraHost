@@ -42,13 +42,13 @@ const Docs = () => {
             case 'welcome':
                 return (
                     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                        <h1 className="text-4xl font-bold text-white mb-6">Welcome to PeerHost Docs</h1>
+                        <h1 className="text-4xl font-bold text-white mb-6">Welcome to LineraHost Docs</h1>
                         <p className="text-lg text-gray-300 leading-relaxed">
-                            PeerHost is the world's first **Decentralized & Monetizable** serverless execution network.
+                            LineraHost is the world's first **Decentralized & Monetizable** serverless execution network.
                             We enable developers to deploy backend logic as individual functions without provisioning a single server,
                             while guaranteeing that code executes on a permissionless global grid.
                             <br /><br />
-                            Crucially, PeerHost implements the <strong>x402 Protocol</strong>, allowing any function to potentially earn revenue from both humans and AI agents.
+                            Crucially, LineraHost implements the <strong>x402 Protocol</strong>, allowing any function to potentially earn revenue from both humans and AI agents.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
                             <div className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-blue-500/50 transition-colors">
@@ -72,7 +72,7 @@ const Docs = () => {
                     <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <h1 className="text-3xl font-bold text-white">Where do I start?</h1>
                         <div className="prose prose-invert max-w-none">
-                            <p>Everything in PeerHost revolves around <strong>Functions</strong>. A function is a single piece of JavaScript code that performs a task.</p>
+                            <p>Everything in LineraHost revolves around <strong>Functions</strong>. A function is a single piece of JavaScript code that performs a task.</p>
 
                             <h3 className="text-xl font-semibold text-white mt-6 mb-4">Prerequisites</h3>
                             <ul className="list-disc pl-6 space-y-2 text-gray-300">
@@ -85,9 +85,9 @@ const Docs = () => {
                             <ol className="list-decimal pl-6 space-y-4 text-gray-300">
                                 <li><strong>Log in</strong>: Connect your wallet at the top right.</li>
                                 <li><strong>Go to Console</strong>: Click "Go to Console" or "Start Building".</li>
-                                <li><strong>Connect GitHub</strong>: Link your GitHub account so PeerHost can read your repositories.</li>
+                                <li><strong>Link GitHub</strong>: Connect your GitHub account so LineraHost can read your repositories.</li>
                                 <li><strong>Select a Repo</strong>: Choose a repository containing a <code>functions/</code> folder.</li>
-                                <li><strong>Deploy</strong>: PeerHost handles the bundling, IPFS upload, and blockchain registration automatically.</li>
+                                <li><strong>Deploy</strong>: LineraHost handles the bundling, IPFS upload, and blockchain registration automatically.</li>
                             </ol>
                         </div>
                     </div>
@@ -102,15 +102,15 @@ const Docs = () => {
                             <section>
                                 <h2 className="text-2xl font-semibold text-green-400 mb-2">Native Monetization</h2>
                                 <p className="text-gray-300">
-                                    PeerHost allows you to attach a price to any function. We use the <strong>x402 Protocol</strong> (Payment Required) to ensure that users (or AI Agents) pay your specified fee before the code is executed.
+                                    LineraHost allows you to attach a price to any function. We use the <strong>x402 Protocol</strong> (Payment Required) to ensure that users (or AI Agents) pay your specified fee before the code is executed.
                                 </p>
                             </section>
 
                             <section>
                                 <h2 className="text-2xl font-semibold text-blue-400 mb-2">Decentralized Execution</h2>
                                 <p className="text-gray-300">
-                                    Unlike AWS Lambda or Vercel, which run on proprietary servers owned by one company, PeerHost runs on a <strong>Network of Independent Workers</strong>.
-                                    Anyone can run a PeerHost worker node. This means your backend is immune to single-provider outages or censorship.
+                                    Unlike AWS Lambda or Vercel, which run on proprietary servers owned by one company, LineraHost runs on a <strong>Network of Independent Workers</strong>.
+                                    Anyone can run a LineraHost worker node. This means your backend is immune to single-provider outages or censorship.
                                 </p>
                             </section>
 
@@ -137,13 +137,13 @@ const Docs = () => {
                 return (
                     <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <h1 className="text-3xl font-bold text-white">How It Works</h1>
-                        <p className="text-gray-300">The lifecycle of a PeerHost Request:</p>
+                        <p className="text-gray-300">The lifecycle of a LineraHost Request:</p>
 
                         <div className="relative border-l-2 border-white/20 ml-4 space-y-12 py-4">
                             <div className="relative pl-8">
                                 <span className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-500"></span>
                                 <h3 className="font-bold text-white text-lg">1. User Request</h3>
-                                <p className="text-sm text-gray-400">User hits <code>https://wallet.peerhost.net/project/fn</code></p>
+                                <p className="text-sm text-gray-400">User hits <code>https://linera-host-gateway.vercel.app/run/project/fn</code></p>
                             </div>
                             <div className="relative pl-8">
                                 <span className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-cyan-500"></span>
@@ -174,7 +174,7 @@ const Docs = () => {
                     <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <h1 className="text-3xl font-bold text-white">Serverless Functions</h1>
                         <p className="text-gray-300">
-                            Detailed technical breakdown of how PeerHost handles your code.
+                            Detailed technical breakdown of how LineraHost handles your code.
                         </p>
 
                         <h3 className="text-xl font-bold text-white border-b border-white/10 pb-2">Bundling Strategy</h3>
@@ -227,7 +227,7 @@ const Docs = () => {
 
                         <h3 className="text-xl font-bold text-white mt-6">How Workers Operate</h3>
                         <p className="text-gray-300">
-                            A Worker is a lightweight Node.js daemon that anyone can run. It connects to the Polygon RPC and listens for specific events.
+                            A Worker is a lightweight Node.js daemon that anyone can run. It connects to the Linera network and listens for specific events.
                         </p>
                         <ol className="list-decimal pl-6 space-y-3 text-gray-300">
                             <li><strong>The Listener:</strong> Constantly polls the blockchain for <code>ExecutionRequested(requestId, cid, ...)</code>.</li>
@@ -254,17 +254,9 @@ const Docs = () => {
                         </p>
 
                         <div className="bg-[#1a1a1a] p-6 rounded-xl border border-white/10">
-                            <h3 className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-2">Contract Address (Amoy Testnet)</h3>
+                            <h3 className="text-sm font-mono text-gray-500 uppercase tracking-widest mb-2">Application ID (Linera Testnet Conway)</h3>
                             <div className="flex items-center gap-3">
-                                <code className="text-green-400 font-mono text-lg break-all">0x087a2d886fc8eadf5d03f6ea5acd0b1430c13fb8</code>
-                                <a
-                                    href="https://amoy.polygonscan.com/address/0x087a2d886fc8eadf5d03f6ea5acd0b1430c13fb8"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    <ExternalLink size={20} />
-                                </a>
+                                <code className="text-green-400 font-mono text-lg break-all">51014c1f9bf2f633ab3d8ae8354449ae46f195b61e47e878b3e6f0e80bf32fe9</code>
                             </div>
                         </div>
 
@@ -352,7 +344,7 @@ const Docs = () => {
                             </div>
                             <div className="p-4 bg-white/5 rounded-lg border border-white/5">
                                 <h4 className="font-mono text-green-400 mb-2">2. The Payment</h4>
-                                <p className="text-sm text-gray-400">Client pays on-chain (Polygon Amoy). This can be an instant wallet signature or an automated agent transaction.</p>
+                                <p className="text-sm text-gray-400">Client pays on-chain (Linera Testnet Conway). This can be an instant wallet signature or an automated agent transaction.</p>
                             </div>
                             <div className="p-4 bg-white/5 rounded-lg border border-white/5">
                                 <h4 className="font-mono text-blue-400 mb-2">3. The Proof</h4>
@@ -367,7 +359,7 @@ const Docs = () => {
                     <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <h1 className="text-3xl font-bold text-white">Agentic Payments</h1>
                         <p className="text-gray-300">
-                            PeerHost is the <strong>Native Execution Layer for AI Agents</strong>.
+                            LineraHost is the <strong>Native Execution Layer for AI Agents</strong>.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
@@ -389,7 +381,7 @@ const Docs = () => {
 
                         <h3 className="text-xl font-bold text-white mt-8">MCP Integration</h3>
                         <p className="text-gray-300">
-                            Every PeerHost project automatically generates a <code>mcp.json</code> (Model Context Protocol).
+                            Every LineraHost project automatically generates a <code>mcp.json</code> (Model Context Protocol).
                             When you paste your project URL into compatible AI tools (like Claude Desktop or specialized Agent Browsers), the AI instantly knows:
                         </p>
                         <ul className="list-disc pl-6 space-y-2 mt-4 text-gray-400 font-mono text-sm">
@@ -441,8 +433,8 @@ const Docs = () => {
                                                 window.scrollTo({ top: 0, behavior: 'smooth' });
                                             }}
                                             className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all ${activeSection === item.id
-                                                    ? 'bite/10 text-white border border-white/10'
-                                                    : 'tgray-400 hover:text-white hover:bg-white/5'
+                                                ? 'bite/10 text-white border border-white/10'
+                                                : 'tgray-400 hover:text-white hover:bg-white/5'
                                                 }`}
                                         >
                                             <item.icon size={16} className={activeSection === item.id ? 'text-blue-400' : 'opacity-70'} />

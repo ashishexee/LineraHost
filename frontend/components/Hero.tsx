@@ -7,6 +7,8 @@ import { useLinera } from '../context/LineraContext';
 import { InitializationStatus } from './InitializationStatus';
 import { toast } from 'sonner';
 
+import { PEERHOST_APP_ID } from '../context/LineraContext';
+
 const Hero = () => {
   const navigate = useNavigate();
   // Using LineraContext for manual chain creation flow
@@ -33,24 +35,25 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
 
-        {/* Polygon Network Badge */}
+        {/* Linera Application ID Badge */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="flex justify-center mb-8 fill-[#8247E5]"
         >
-          <a
-            href="https://amoy.polygonscan.com/address/0x087a2d886fc8eadf5d03f6ea5acd0b1430c13fb8"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 hover:border-[#8247E5]/50 hover:bg-[#8247E5]/10 transition-all cursor-pointer backdrop-blur-sm group"
+            onClick={() => {
+              navigator.clipboard.writeText(PEERHOST_APP_ID);
+              toast.success("Application ID Copied!");
+            }}
           >
             <span className="text-xs font-medium text-accents-5 group-hover:text-white transition-colors">
-              Native x402 Execution on <span className="text-white">Polygon</span>
+              Linera Application ID: <span className="text-white font-mono">{PEERHOST_APP_ID.slice(0, 10)}...{PEERHOST_APP_ID.slice(-6)}</span>
             </span>
             <ExternalLink className="w-3 h-3 text-gray-600 group-hover:text-[#8247E5] ml-1" />
-          </a>
+          </div>
         </motion.div>
 
         {/* Main Heading */}
@@ -70,7 +73,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-accents-5 max-w-3xl mx-auto mb-10 leading-relaxed"
         >
-          Run your code on a global, censorship-resistant worker grid. Monetize natively with the x402 Protocol. PeerHost is the execution layer for the Agentic Economy, where AI Agents and Humans pay for compute.
+          Run your code on a global, censorship-resistant worker grid. Monetize natively with the x402 Protocol. LineraHost is the execution layer for the Agentic Economy, where AI Agents and Humans pay for compute.
         </motion.p>
 
         {/* Buttons */}
@@ -85,8 +88,8 @@ const Hero = () => {
               onClick={handleAction}
               disabled={status === 'creating'}
               className={`h-12 px-8 rounded-full font-medium text-base transition-all flex items-center gap-2 ${status === 'ready'
-                  ? "bg-white text-black hover:bg-gray-200"
-                  : "bg-accents-1 border border-accents-2 text-white hover:bg-accents-2"
+                ? "bg-white text-black hover:bg-gray-200"
+                : "bg-accents-1 border border-accents-2 text-white hover:bg-accents-2"
                 } ${status === 'creating' ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
               {status === 'creating' ? (

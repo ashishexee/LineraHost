@@ -55,7 +55,7 @@ export default function WorkerRegistration() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Run a Worker Node</h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Earn rewards by contributing compute power to the PeerHost network.
+            Earn rewards by contributing compute power to the LineraHost network.
             Run serverless functions in a secure sandbox environment.
           </p>
         </div>
@@ -101,9 +101,9 @@ npm install" />
 
           <Step number={3} title="Configure Environment">
             <p>Create a <code className="text-blue-300">.env</code> file in the <code className="text-blue-300">/peerhost/</code> that is the root directory.</p>
-            <CodeBlock code="GATEWAY_URL=https://gateway.peerhost.net
-RPC_URL=https://polygon-rpc.com
-PRIVATE_KEY=your_wallet_private_key
+            <CodeBlock code="GATEWAY_URL=https://linera-host-gateway.vercel.app
+LINERA_NODE_URL=http://localhost:8080
+LINERA_CHAIN_ID=your_chain_id
 IPFS_GATEWAY=https://ipfs.io/ipfs/" />
             <div className="bg-yellow-500/10 border border-yellow-500/20 p-4 rounded-lg text-sm text-yellow-200 mt-4">
               ⚠️ <strong>Security Note:</strong> Your private key is used ONLY to sign execution results on-chain. Store it securely and never share it.
@@ -123,7 +123,7 @@ IPFS_GATEWAY=https://ipfs.io/ipfs/" />
           <h2 className="text-2xl font-bold text-white mb-8 border-b border-white/10 pb-4">Run on Android</h2>
 
           <p className="text-gray-400 mb-8">
-            You can also run PeerHost's Workers Node on Android devices using Termux.
+            You can also run LineraHost's Workers Node on Android devices using Termux.
             This allows you to contribute compute power directly from your mobile phone.
           </p>
 
@@ -149,9 +149,9 @@ cd peerhost/apps/worker" />
             <p>Create your .env file.</p>
             <CodeBlock code="nano .env" />
             <p className="mt-2 mb-2">Paste your configuration:</p>
-            <CodeBlock code="GATEWAY_URL=https://gateway.peerhost.net
-RPC_URL=https://polygon-rpc.com
-PRIVATE_KEY=your_wallet_private_key
+            <CodeBlock code="GATEWAY_URL=https://linera-host-gateway.vercel.app
+LINERA_NODE_URL=http://localhost:8080
+LINERA_CHAIN_ID=your_chain_id
 IPFS_GATEWAY=https://ipfs.io/ipfs/" />
             <div className="bg-blue-500/10 border border-blue-500/20 p-4 rounded-lg text-sm text-blue-200 mt-4">
               <strong>Nano Tips:</strong><br />

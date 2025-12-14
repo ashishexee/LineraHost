@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="max-w-[1400px] mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-8">
           <a href="/" onClick={(e) => { e.preventDefault(); navigate('/'); }} className="font-lustra font-bold text-xl tracking-tighter flex items-center gap-2 cursor-pointer bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
-            PeerHost
+            LineraHost
           </a>
           <div className="hidden lg:flex items-center gap-1">
             <button

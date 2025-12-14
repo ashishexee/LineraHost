@@ -2,7 +2,7 @@ import axios from "axios";
 
 const LINERA_NODE_URL = process.env.LINERA_NODE_URL || "http://localhost:8080";
 const APPLICATION_ID = process.env.LINERA_APPLICATION_ID;
-const GATEWAY_URL = process.env.GATEWAY_URL || "https://peerhost-jl8u.vercel.app";
+const GATEWAY_URL = process.env.GATEWAY_URL || "https://linera-host-gateway.vercel.app";
 
 const LINERA_CHAIN_ID = process.env.LINERA_CHAIN_ID;
 

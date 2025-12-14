@@ -78,8 +78,8 @@ export default function Dashboard() {
                                         key={repo.id}
                                         onClick={() => setSelectedRepo(repo)}
                                         className={`p-3 rounded-lg border cursor-pointer transition-all ${selectedRepo?.id === repo.id
-                                                ? 'bg-white/10 border-white text-white'
-                                                : 'bg-white/5 border-white/5 text-gray-400 hover:border-white/20'
+                                            ? 'bg-white/10 border-white text-white'
+                                            : 'bg-white/5 border-white/5 text-gray-400 hover:border-white/20'
                                             }`}
                                     >
                                         <div className="flex items-center gap-2">
@@ -137,7 +137,7 @@ export default function Dashboard() {
 
                                         setLoading(true);
                                         try {
-                                            const res = await fetch('https://peerhost-jl8u.vercel.app/deploy', {
+                                            const res = await fetch('https://linera-host-gateway.vercel.app/deploy', {
                                                 method: 'POST',
                                                 headers: { 'Content-Type': 'application/json' },
                                                 body: JSON.stringify({
@@ -164,7 +164,7 @@ export default function Dashboard() {
                                     className="bg-white text-black px-6 py-3 rounded-lg font-bold hover:bg-gray-200 transition-colors flex items-center gap-2 disabled:opacity-50"
                                 >
                                     {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Play className="w-4 h-4" />}
-                                    Deploy to PeerHost
+                                    Deploy to LineraHost
                                 </button>
                             </div>
                         </div>
