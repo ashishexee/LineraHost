@@ -10,11 +10,11 @@ export default function DashboardLayout() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans w-full">
+    <div className="h-full bg-black text-white font-sans w-full flex">
       <Sidebar />
-      <div className="flex flex-col min-h-screen">
+      <div className="flex-1 flex flex-col h-full ml-64 overflow-hidden">
         <TopBar />
-        <main className="ml-64 flex-1 p-8 overflow-y-auto">
+        <main className="flex-1 p-8 overflow-y-auto custom-scrollbar">
           {location.pathname !== '/deploy' && (
             <button
               onClick={() => navigate('/deploy')}
