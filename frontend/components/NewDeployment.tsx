@@ -210,7 +210,7 @@ export default function NewDeployment() {
         }, {} as Record<string, string>);
 
         setDeploying(true);
-        const toastId = toast.loading("Deploying to PeerHost Network...");
+        const toastId = toast.loading("Deploying to LineraHost Network...");
 
         try {
             const res = await fetch('https://linera-host-gateway.vercel.app/deploy', {

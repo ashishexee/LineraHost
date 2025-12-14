@@ -456,7 +456,7 @@ const Docs = () => {
                     <div className="mt-20 pt-8 border-t border-white/10 flex justify-between text-sm text-gray-500">
                         <div>
                             Is something missing?
-                            <a href="https://github.com/ashishexee/peerhost" target="_blank" className="ml-1 text-white hover:underline">Edit this page on GitHub</a>
+                            <a href="https://github.com/ashishexee/LineraHost" target="_blank" className="ml-1 text-white hover:underline">Edit this page on GitHub</a>
                         </div>
                     </div>
                 </main>

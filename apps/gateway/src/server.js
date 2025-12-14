@@ -46,7 +46,7 @@ app.get("/health", async (req, reply) => {
 // GitHub OAuth Flow
 const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
-const FRONTEND_URL = "https://peerhost.vercel.app/auth/callback";
+const FRONTEND_URL = process.env.FRONTEND_URL || "https://linera-host-gateway.vercel.app/auth/callback";
 
 app.get('/auth/github/login', async (req, reply) => {
   if (!GITHUB_CLIENT_ID) {
@@ -248,7 +248,7 @@ if (!process.env.SUPABASE_URL || !process.env.SUPABASE_KEY) {
 
 app.listen({ port: PORT, host: HOST })
   .then(() => {
-    console.log(`PeerHost Gateway running on ${HOST}:${PORT}`);
+    console.log(`LineraHost Gateway running on ${HOST}:${PORT}`);
     console.log(`RPC_URL configured: ${process.env.RPC_URL ? 'YES' : 'NO'}`);
   })
   .catch((err) => {

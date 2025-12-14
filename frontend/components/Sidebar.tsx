@@ -21,7 +21,7 @@ export default function Sidebar() {
         onClick={() => navigate('/')}
         className="h-16 flex items-center px-6 border-b border-white/10 cursor-pointer hover:bg-white/5 transition-colors"
       >
-        <span className="font-lustra font-bold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">PeerHost</span>
+        <span className="font-lustra font-bold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">LinerHost</span>
       </div>
 
       {/* Navigation */}

@@ -23,7 +23,7 @@ const PreFooter = () => {
                 transition={{ duration: 0.5 }}
                 className="relative z-10"
              >
-                <h3 className="text-3xl font-bold mb-2">Ready to deploy? <span className="text-accents-5 font-normal">Start building on PeerHost (Free on Testnet).</span></h3>
+                <h3 className="text-3xl font-bold mb-2">Ready to deploy? <span className="text-accents-5 font-normal">Start building on LineraHost (Free on Testnet).</span></h3>
                 <h3 className="text-3xl font-normal text-accents-5 mb-8">Talk to the team for <span className="text-[#3291ff]">Mainnet</span> & <span className="text-[#a046b6]">Enterprise</span> integrations.</h3>
                 
                 <div className="flex flex-wrap gap-3">
@@ -47,7 +47,7 @@ const PreFooter = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="relative z-10"
             >
-                <h3 className="text-lg font-medium mb-2">Explore PeerHost Protocol <span className="text-accents-5 font-normal">with an interactive product tour, whitepaper, or a personalized demo.</span></h3>
+                <h3 className="text-lg font-medium mb-2">Explore LineraHost Protocol <span className="text-accents-5 font-normal">with an interactive product tour, whitepaper, or a personalized demo.</span></h3>
                 <button className="mt-6 h-10 px-5 rounded-full bg-black border border-accents-2 text-accents-5 font-medium text-sm hover:text-white hover:border-white transition-all">
                     Explore Protocol
                 </button>
