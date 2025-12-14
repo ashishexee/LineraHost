@@ -13,7 +13,7 @@ interface ProjectGroup {
     latestUpdate: string;
 }
 
-import { useLinera } from '../context/LineraContext'; // Added import
+import { useLinera } from '../context/LineraContext';
 
 interface ProjectGroup {
     name: string;

@@ -39,7 +39,6 @@ await app.register(rateLimit, {
   timeWindow: "1 minute"
 });
 
-
 app.get("/health", async (req, reply) => {
   return { status: "ok", service: "peerhost-gateway" };
 });

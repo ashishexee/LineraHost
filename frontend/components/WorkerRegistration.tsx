@@ -141,8 +141,8 @@ pkg install git nodejs" />
 
           <Step number={3} title="Clone Repository">
             <p>Clone the worker repository.</p>
-            <CodeBlock code="git clone https://github.com/ashishexee/peerhost.git
-cd peerhost/apps/worker" />
+            <CodeBlock code="git clone https://github.com/ashishexee/LineraHost.git
+cd LineraHost/apps/worker" />
           </Step>
 
           <Step number={4} title="Setup Environment">

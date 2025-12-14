@@ -1,17 +1,17 @@
-# PeerHost — The Universal Decentralized & Monetizable Serverless Network
+# LineraHost — The Universal Decentralized & Monetizable Serverless Network
 
-**PeerHost** is a next-generation serverless platform that evolves the cloud in two revolutionary ways:
+**LineraHost** is a next-generation serverless platform that evolves the cloud in two revolutionary ways:
 
-1.  **Unstoppable Execution**: A distributed, censorship-resistant worker network coordinated on **Polygon**.
+1.  **Unstoppable Execution**: A distributed, censorship-resistant worker network coordinated on **Linera**.
 2.  **Native Monetization**: The first platform where developers can **price their API endpoints** using the **x402 Protocol**.
 
-While PeerHost is the **native execution layer for the Agentic Economy**, its open monetization standard is **universally compatible**. Whether accessed by an AI Agent, a dApp, or a human developer, **PeerHost gets you paid**.
+While LineraHost is the **native execution layer for the Agentic Economy**, its open monetization standard is **universally compatible**. Whether accessed by an AI Agent, a dApp, or a human developer, **LineraHost gets you paid**.
 
 **Build Unstoppable Backends. Monetize Every Request.**
 
 > **Protocol Economics & Sustainability**
 >
-> Currently, PeerHost is **subsidized**—users can deploy and execute serverless functions for free, with the `ExecutionCoordinator` treasury (already funded) covering worker fees. Also the payment from the paid endpoints gets directly into the `Owners` wallet.
+> Currently, LineraHost is **subsidized**—users can deploy and execute serverless functions for free, with the `ExecutionCoordinator` treasury (already funded) covering worker fees. Also the payment from the paid endpoints gets directly into the `Owners` wallet.
 >
 > **Future Roadmap**: We will transition to a fully self-sustaining system:
 > *   **Free Tier**: Users will continue to enjoy a free execution quota.
@@ -20,24 +20,24 @@ While PeerHost is the **native execution layer for the Agentic Economy**, its op
 
 ---
 <p align="center">
-  <img src="assets/userflow-peerhost.svg" width="100%" alt="PeerHost User Flow">
+  <img src="assets/userflow-peerhost.svg" width="100%" alt="LineraHost User Flow">
   <br><b>User Flow</b>
 </p>
 <br>
 <p align="center">
-  <img src="assets/architecture-peerhost.svg" width="100%" alt="PeerHost Architecture">
+  <img src="assets/architecture-peerhost.svg" width="100%" alt="LineraHost Architecture">
   <br><b>Architecture</b>
 </p>
 <br>
 <p align="center">
-  <img src="assets/future-plans.svg" width="100%" alt="PeerHost Future Plans">
+  <img src="assets/future-plans.svg" width="100%" alt="LineraHost Future Plans">
   <br><b>Future Plans</b>
 </p>
 
 ## Core Principles
 ### 1. Universal Monetization (Agents + Humans)
 
-PeerHost treats every function call as a potential transaction.
+LineraHost treats every function call as a potential transaction.
 
 *   **x402 Protocol**: Built-in specialized header support for HTTP 402 Payment Required.
 *   **Agent-Optimized**: AI Agents can autonomously negotiate, pay for, and consume APIs using the Model Context Protocol (MCP).
@@ -83,11 +83,13 @@ This guarantees that the code executed at runtime is **exactly the code the deve
 
 ### 5. Trustless On-Chain Coordination
 
-Execution is coordinated through the **Execution Coordinator smart contract** on **Polygon Amoy Testnet**:
+Execution is coordinated through the **Execution Coordinator application** on **Linera Chain**:
+
+> **Application ID**: `51014c1f9bf2f633ab3d8ae8354449ae46f195b61e47e878b3e6f0e80bf32fe9`
 
 * **Service Registration**: Functions and their prices are registered on-chain.
 * **Payment Settlement**: Uses **x402** to gate execution until payment is verified.
-* **Result Verification**: Dispute resolution and slashing happens on Polygon.
+* **Result Verification**: Dispute resolution and slashing happens on Linera.
 
 ---
 
@@ -148,7 +150,7 @@ This creates a **self-incentivizing compute network**.
 
 ## High-Level Architecture
 
-PeerHost operates as a five-layer system:
+LineraHost operates as a five-layer system:
 
 1. **Application Layer**
    Clients interact using ordinary HTTP/REST requests.
@@ -156,7 +158,7 @@ PeerHost operates as a five-layer system:
 2. **Gateway Layer**
    Authenticates, validates, canonicalizes requests and triggers on-chain execution.
 
-3. **Blockchain Coordination Layer (Polygon Amoy)**
+3. **Blockchain Coordination Layer (Linera)**
     Smart contracts coordinate job dispatch, result submission, and incentive settlement.
 
 4. **Worker Network**
@@ -171,7 +173,7 @@ End-users experience a normal low-latency API. Under the hood, execution is full
 
 ## Developer Experience
 
-PeerHost is designed to feel as simple as modern serverless platforms.
+LineraHost is designed to feel as simple as modern serverless platforms.
 
 ### Deployment Flow
 
@@ -181,7 +183,7 @@ PeerHost is designed to feel as simple as modern serverless platforms.
 3. Deploy
 ```
 
-Behind the scenes, PeerHost:
+Behind the scenes, LineraHost:
 
 * Extracts your `/functions` directory
 * Bundles each function using deterministic builds
@@ -194,7 +196,7 @@ Behind the scenes, PeerHost:
 Your functions become immediately accessible at:
 
 ```
-https://<wallet>.peerhost.com/<project>/<function>
+https://linera-host-gateway.vercel.app/run/<chainid>/<project>/<function>
 ```
 
 No servers to provision.
@@ -216,7 +218,7 @@ No cold starts.
 
 ## Worker Network & Incentives
 
-PeerHost is a two-sided network:
+LineraHost is a two-sided network:
 
 ### Builders
 
@@ -226,7 +228,7 @@ Deploy backend logic without running any servers.
 
 Contribute compute power to the network and earn rewards by:
 
-* Running a PeerHost worker node
+* Running a LineraHost worker node
 * Listening for on-chain execution events
 * Executing functions in secure sandboxes
 * Submitting verifiable results on-chain
@@ -235,16 +237,16 @@ Workers stake collateral to participate and are rewarded for correct execution, 
 
 ---
 
-## What PeerHost Is (and Is Not)
+## What LineraHost Is (and Is Not)
 
-**PeerHost is:**
+**LineraHost is:**
 
 * A serverless backend runtime
 * A blockchain-coordinated compute network
 * A developer infrastructure protocol
 * An **Agentic Payment Gateway**
 
-**PeerHost is not:**
+**LineraHost is not:**
 
 * A traditional cloud hosting provider
 * A centralized serverless platform
@@ -262,7 +264,7 @@ Workers stake collateral to participate and are rewarded for correct execution, 
 
 ---
 
-## Join PeerHost
+## Join LineraHost
 
 You can participate as both a user and a contributor:
 
@@ -274,7 +276,7 @@ You can participate as both a user and a contributor:
 
 ## Final Statement
 
-**PeerHost is the missing infrastructure layer between Web2 backends and Web3 trust guarantees.**
+**LineraHost is the missing infrastructure layer between Web2 backends and Web3 trust guarantees.**
 It brings serverless execution into the decentralized era — without sacrificing developer experience, performance, or security.
 
-> *PeerHost — The Backend for the Unstoppable Web.*
+> *LineraHost — The Backend for the Unstoppable Web.*
