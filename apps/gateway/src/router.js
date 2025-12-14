@@ -203,7 +203,9 @@ export default async function router(req, reply) {
         }
 
         return reply.status(500).send({
-            error: "Gateway execution failed"
+            error: "Gateway execution failed",
+            details: err.message,
+            stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
         });
     }
 }
